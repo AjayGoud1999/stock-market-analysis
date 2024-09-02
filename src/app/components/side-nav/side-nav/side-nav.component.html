@@ -1,0 +1,72 @@
+<div class="wrapper">
+    <aside id="sidebar" [class.expand]="isExpanded">
+        <ul class="sidebar-nav">
+            <li class="sidebar-item" (click)="onItemClick($event)" id="home-item">
+                <a routerLink="/home" routerLinkActive="active" class="sidebar-link">
+                    <img class="imgSet" src="../../../../assets/images/home.png" alt="">
+                    <span class="ml-4">Home</span>
+                </a>
+            </li>
+            <li class="sidebar-item" (click)="onItemClick($event)" id="stock-item">
+                <a routerLink="/stocks" routerLinkActive="active" class="sidebar-link">
+                    <img class="imgSet" src="../../../../assets/images/stocks.png" alt="">
+                    <span>Stocks</span>
+                </a>
+            </li>
+            <li class="sidebar-item" (click)="onItemClick($event)" id="topstock-item">
+                <a  routerLink="/top-stocks" routerLinkActive="active" class="sidebar-link">
+                    <img class="imgSet" src="../../../../assets/images/topstocks.png" alt="">
+                    <span>Top Stocks</span>
+                </a>
+            </li>
+            <li class="sidebar-item" (click)="onItemClick($event)" id="ipos">
+                <a  routerLink="/ipo" routerLinkActive="active" class="sidebar-link">
+                    <img class="imgSet" src="../../../../assets/images/IPO.png" alt="">
+                    <span>IPOs</span>
+                </a>
+            </li>
+            <li class="sidebar-item" (click)="onItemClick($event)" id="news-item">
+                <a  routerLink="/news" routerLinkActive="active" class="sidebar-link">
+                    <img class="imgSet" src="../../../../assets/images/news.png" alt="">
+                    <span>News</span>
+                </a>
+            </li>
+            <li class="sidebar-item" (click)="onItemClick($event)" id="trending">
+                <a  routerLink="/trending" routerLinkActive="active" class="sidebar-link">
+                    <!-- <i class="lni lni-agenda"></i> -->
+                    <img class="imgSet" src="../../../../assets/images/trending.png" alt="">
+
+                    <span>Trending</span>
+                </a>
+            </li>
+            <li class="sidebar-item" (click)="onItemClick($event)" id="profile">
+                <a  routerLink="/profile" routerLinkActive="active" class="sidebar-link">
+                    <img class="imgSet" src="../../../../assets/images/profile.png" alt="">
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="sidebar-footer">
+                <a routerLink="" routerLinkActive="active" class="sidebar-link">
+                    <img class="imgSet" src="../../../../assets/images/logout.png" alt="">
+
+                    <span>Logout</span>
+                </a>
+            </li>
+            <hr>
+            <li class="sidebar-item" (click)="collapeNavbar()">
+                <a class="sidebar-link" *ngIf="isExpanded===true">
+                    <img class="imgSet" src="../../../../assets/images/collapse.png" alt="">
+                    <span>Collapse</span>
+                </a>
+                <a class="sidebar-link" *ngIf="isExpanded===false">
+                    <img class="imgSet" src="../../../../assets/images/expand.png" alt="">
+                    <span>Collapse</span>
+                </a>
+            </li>
+            
+        </ul>       
+    </aside>
+    <div class="main p-3">
+        <router-outlet></router-outlet> <!-- This is where the routed component will be displayed -->
+    </div>
+</div>
