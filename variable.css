@@ -1,4 +1,10 @@
 :root {
+    --background:#FFFFF0;
     --primary-color: #F0F8FF;
     --secondary-color: #0e2238;
+    --gray:#BEBFC5;
+    --gain:#28a745;
+    --loss:#dc3545;
+    --blue:#5D60EF;
+    --text-color: #697565
 }

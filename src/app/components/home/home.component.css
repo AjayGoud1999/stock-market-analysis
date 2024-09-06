@@ -1,0 +1,51 @@
+body{
+    background-color: red !important;
+}
+.textHead{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 12px;
+    color: var(--blue);
+}
+.textHeadGain{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--blue);
+}
+.textHeadLoss{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--blue);
+}
+
+table{
+    border: 1px solid var(--gray)
+}
+table td{
+    border: 1px solid var(--gray);
+}
+table th{
+    border: 1px solid var(--gray);
+}
+.imgSet{
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.stockPercentageGain{
+    color: var(--gain);
+    font-weight: bold;
+
+}
+.stockPercentageLoss{
+    color: var(--loss);
+    font-weight: bold;
+}
+
+.stockName{
+    color: var(--blue);
+}

@@ -17,6 +17,7 @@
   .title {
     font-size: 24px; /* Adjust size as needed */
     font-weight: bold;
+    color: var(--text-color)
   }
 .searchBoxWidth{
     width: 70% !important;
@@ -49,7 +50,9 @@ input[type=search]{
     color: black;
     padding: 2px 4px 2px 4px;
     margin-right: 10px;
-    border:none
+    border:none;
+    color: var(--text-color)
+
 }
 
 .buttonHead:hover{

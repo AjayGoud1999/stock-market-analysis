@@ -29,7 +29,7 @@ body {
 }
 
 .main {
-    min-height: 10vh;
+    min-height: 90vh;
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
@@ -92,6 +92,7 @@ a.sidebar-link {
     white-space: nowrap;
     border-left: 3px solid transparent;
     text-decoration: none;
+
 }
 .imgSet{
     background-repeat: no-repeat;
@@ -119,8 +120,10 @@ a.sidebar-link:hover {
 a.sidebar-link:hover .imgSet {
     filter: brightness(1.2) contrast(1.2); /* Increase brightness and contrast for better visibility */
 }
-.sidebar-item {
+.sidebar-item span{
     position: relative;
+    color: var(--text-color)
+
 }
 
 #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
@@ -159,6 +162,21 @@ a.sidebar-link:hover .imgSet {
 }
 a.sidebar-link.active {
 
-    background-color: var(--primary-color);
+    background-color: var(--blue);
     font-weight: bold;
-  }
+    border-radius: 30px;
+    transition: transform 300ms ease-in-out;
+
+}
+a.sidebar-link.active span{
+    color: white;
+    transition: color 0.3s ease;
+}
+a.sidebar-link.active .imgSet {
+    filter: brightness(0) invert(1) contrast(2);
+    
+}
+
+
+
+
